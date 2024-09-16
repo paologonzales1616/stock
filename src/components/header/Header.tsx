@@ -2,7 +2,7 @@ import clsx from "clsx";
 import companyLogo from "../../assets/company-logo.png";
 import styles from "./Header.module.scss";
 import { useAppDispatch } from "../../app/hooks";
-import { openSearchModal } from "../searchModal/SearchModalSlice";
+import { openSearchModal } from "../searchModal/searchModalSlice";
 import { useEffect } from "react";
 
 function Header() {

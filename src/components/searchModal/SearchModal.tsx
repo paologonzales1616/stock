@@ -1,6 +1,6 @@
 import { Dialog, DialogBackdrop, DialogPanel, Input } from "@headlessui/react";
 import { useAppDispatch, useAppSelector } from "../../app/hooks";
-import { closeSearchModal, selectSearchModalStatus } from "./SearchModalSlice";
+import { closeSearchModal, selectSearchModalStatus } from "./searchModalSlice";
 import clsx from "clsx";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
