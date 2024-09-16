@@ -12,13 +12,12 @@ function SearchModal() {
 
   const [searchTerm, setSearchTerm] = useState("");
 
-  console.log(searchTerm);
-
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Enter") {
         e.preventDefault(); // Prevent the default browser behavior
         navigate(`/price/${searchTerm}`);
+        setSearchTerm("");
         dispatch(closeSearchModal());
       }
     };
@@ -28,7 +27,7 @@ function SearchModal() {
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
     };
-  }, []);
+  }, [searchTerm]);
 
   return (
     <Dialog
